@@ -295,7 +295,7 @@ class Classifier(Engine):
     def _extract_required_data(self, batch, model_output, target_keys, pred_keys):
         """Extract required data from batch and model_output for metrics computation"""
         data = OrderedDict()
-
+        data['accession'] = batch['accession']
         # Extract target data
         for key in sorted(target_keys):
             if key in batch:
