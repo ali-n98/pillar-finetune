@@ -82,12 +82,12 @@ dependencies = [
     "datadings>=3.4.7",
     "rad-vision-engine",
     "hatchling>=1.27.0",
-    "flash-attn==2.7.0.post2",
+    "flash-attn==2.8.3",
 ]
 
 [project.optional-dependencies]
 flash = [
-    "flash-attn>=2.7.0",  # Requires CUDA 12.1+
+    "flash-attn>=2.8.3",  # Requires CUDA 12.1+
 ]
 dev = [
     "pytest>=7.0.0",
@@ -130,7 +130,7 @@ extra-index-url = ["https://download.pytorch.org/whl/cu128"]
 index-strategy = "unsafe-best-match"
 
 [tool.uv.sources]
-rad-vision-engine = { git = "https://github.com/YalaLab/rad-vision-engine.git" }
+rad-vision-engine = { git = "https://github.com/YalaLab/rave.git" }
 
 [tool.black]
 line-length = 120
