@@ -18,7 +18,7 @@ Finetuning framework for Pillar medical imaging models.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 uv sync
-uv add flash-attn==2.7.0.post2 --no-build-isolation
+uv add flash-attn==2.8.3 --no-build-isolation
 source .venv/bin/activate
 ```
 
